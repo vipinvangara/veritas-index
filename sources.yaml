@@ -1,0 +1,23 @@
+# Curated, scheduled sources — every URL/query here has been vetted:
+# either checked crawlable via robots.py (see lesson 1's real findings),
+# or is an official API with its own documented terms (arxiv.py).
+#
+# Wayback lookups are deliberately NOT here — they're on-demand
+# (triggered by a specific "what did X say at time Y" need), not a
+# corpus to proactively re-crawl on a schedule.
+
+crawl:
+  - domain: factcheck.org
+    urls:
+      - https://www.factcheck.org/2026/07/trumps-distorted-venezuela-elections-claim/
+  - domain: altnews.in
+    urls:
+      - https://www.altnews.in/no-one-fired-pellet-guns-in-delhi/
+
+arxiv:
+  - query: misinformation detection
+    max_results: 5
+  - query: deepfake detection
+    max_results: 5
+  - query: fact verification claim checking
+    max_results: 5
